@@ -4,9 +4,29 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>Encriptador de texto</title>
 </head>
 <body>
+<!--Insertar logo arriba a la izquierda -->
+<img class="logo" src="Imagenes/Logo (1).png" alt="Logo de la Página">
+<!--Insertar texto de la página -->
+<h1 class="titulo">Encriptador de texto</h1>
+<!--Insertar texto de la página -->
+<h2 class="subtitulo">Encripta o desencripta tu texto</h2>
+<!--Insertar texto de la página -->
+<h3 class="subtitulo">Escribe tu texto a continuación</h3>
+<!--Insertar caja de texto -->
+<form action="encriptador.php" method="post">
+   <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escribe aquí tu texto"></textarea>
+   <br>
+   <input type="submit" value="Encriptar" name="encriptar">
+   <input type="submit" value="Desencriptar" name="desencriptar">
+</form>
+
+
+
+   
    
 </body>
 </html>
