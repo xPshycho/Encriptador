@@ -1,235 +1,269 @@
 .logo {
-  width: 120px;
-  height: 48px;
-}
-textarea {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  resize: none;
-  height: 435px;
-  width: 629px;
-  left: 286px;
-  top: 249px;
-}
+   width: 120px;
+   height: 48px;
+ }
+ 
+ /* Estilos por defecto para el modo claro */
+ body {
+   background-color: #fff;
+   color: #000;
+   
 
-.botones {
-  /* Frame 3 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-
-  position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  top: 885px;
-
-  /* Button */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
-  width: 328px;
-  height: 67px;
-
-  /* Dark blue/dark-blue-300 */
-  background: #0a3871;
-  border-radius: 24px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  /* Button */
-
-  width: 280px;
-  height: 19px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-
-  /* White */
-  color: #ffffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-
-  /* Button */
-
-  box-sizing: border-box;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
-  width: 328px;
-  height: 67px;
-
-  /* Light gray */
-  background: #d8dfe8;
-  /* Dark blue/dark-blue-300 */
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-  /* Button */
-
-  width: 280px;
-  height: 19px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-
-  /* Dark blue/dark-blue-300 */
-  color: #0a3871;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-}
-
-.cuadro {
-  /* Rectangle 1 */
-
-  position: absolute;
-  width: 400px;
-  height: 944px;
-  left: 1000px;
-  top: 40px;
-
-  /* White */
-  background: #ffffff;
-  /* shadow */
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-}
-/* Muñeco */
-
-.muneco {
-  position: absolute;
-  width: 336px;
-  height: 304px;
-  left: 1032px;
-  top: 283px;
-}
-
-.cajatexto {
-  /* Frame 5 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-
-  position: absolute;
-  width: 336px;
-  height: 122px;
-  left: 1032px;
-  top: 619px;
-}
-.error {
-  /* Ningún mensaje fue encontrado */
-
-  width: 336px;
-  height: 58px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 120%;
-  /* or 29px */
-  text-align: center;
-
-  /* Gray/gray-500 */
-  color: #343a40;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.peti {
-  /* Ingresa el texto que desees encriptar o desencriptar. */
-
-  width: 336px;
-  height: 48px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  /* or 24px */
-  text-align: center;
-
-  /* Gray/gray-400 */
-  color: #495057;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-/* Path: style.css */
-
-.aclaraciones {
-  /* Frame 1 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  position: absolute;
-  width: 229px;
-  height: 18px;
-  left: 240px;
-  top: 851px;
-}
-
-.aclaraciones icon {
-  /* bi:exclamation-circle-fill */
-
-  width: 16px;
-  height: 16px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
+overflow: hidden;
+ }
+ 
+ h1,
+ h2,
+ p {
+   color: #000;
+ }
+ 
+ img {
+   filter: brightness(100%);
+ }
+ 
+ /* Estilos para el modo oscuro */
+ body.modo-oscuro {
+   background-color: #000;
+   color: #fff;
+ }
+ 
+ body.modo-oscuro h1,
+ body.modo-oscuro h2,
+ body.modo-oscuro p {
+   color: #fff;
+ }
+ 
+ body.modo-oscuro img {
+   filter: brightness(150%);
+ }
+ 
+ .switch-container {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   margin-right: 25px;
+ }
+ 
+ .switch-label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 40px;
+   height: 20px;
+   background-color: #ccc;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .switch-label:before {
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   width: 16px;
+   height: 16px;
+   background-color: #fff;
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+ }
+ 
+ input[type="checkbox"] {
+   display: none;
+ }
+ 
+ input[type="checkbox"]:checked + .switch-label {
+   background-color: #6c63ff;
+ }
+ 
+ input[type="checkbox"]:checked + .switch-label:before {
+   transform: translateX(20px);
+ }
+ 
+ textarea {
+   border: none;
+   outline: none;
+   background-color: transparent;
+   resize: none;
+   height: 435px;
+   width: 629px;
+   margin: 10px auto;
+   display: block;
+   text-align: center;
+   padding: 10px;
+   font-size: 16px;
+   border-radius: 8px;
+ }
+ 
+ .botones {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 24px;
+   position: absolute;
+   width: 680px;
+   height: 67px;
+   left: 240px;
+   top: 850px;
+   margin-top: -50px;
+ }
+ 
+ .btn_Encriptar,
+ .btn_Desencriptar,
+ .btn_Limpiar,
+ .btn_Copiar {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 24px;
+   gap: 8px;
+   background: #0a3871;
+   border-radius: 24px;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   color: #ffffff;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   transition: background-color 0.3s ease;
+   cursor: pointer;
+ }
+ 
+ .btn_Encriptar:hover,
+ .btn_Desencriptar:hover,
+ .btn_Limpiar:hover,
+ .btn_Copiar:hover {
+   background-color: #0b4e9b;
+ }
+ 
+ .btn_Encriptar:active,
+ .btn_Desencriptar:active,
+ .btn_Limpiar:active,
+ .btn_Copiar:active {
+   background-color: #0a3871;
+   filter: brightness(90%);
+ }
+ 
+ .cuadro {
+   position: absolute;
+   width: 400px;
+   height: 944px;
+   left: 1000px;
+   top: 40px;
+   background: #ffffff;
+   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+   border-radius: 32px;
+ }
+ 
+ .muneco {
+   position: absolute;
+   width: 336px;
+   height: 304px;
+   left: 1032px;
+   top: 283px;
+ }
+ 
+ .cajatexto {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 16px;
+   position: absolute;
+   width: 336px;
+   height: 122px;
+   left: 1032px;
+   top: 619px;
+ }
+ 
+ .error {
+   width: 336px;
+   height: 58px;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 120%;
+   text-align: center;
+   color: #343a40;
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+ }
+ 
+ .peti {
+   width: 336px;
+   height: 48px;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: center;
+   color: #495057;
+   flex: none;
+   order: 1;
+   align-self: stretch;
+   flex-grow: 0;
+ }
+ 
+ .aclaraciones {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0px;
+   gap: 8px;
+   position: absolute;
+   width: 229px;
+   height: 18px;
+   left: 240px;
+   top: 851px;
+ }
+ 
+ .aclaraciones icon {
+   width: 16px;
+   height: 16px;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+ }
+ 
+ /* Estilos por defecto para el modo claro */
+ body {
+   background-color: #fff;
+   color: #000;
+ }
+ 
+ h1,
+ h2,
+ p {
+   color: #000;
+ }
+ 
+ img {
+   filter: brightness(100%);
+ }
+ 
+ /* Estilos para el modo oscuro */
+ body.modo-oscuro {
+   background-color: #000;
+   color: #fff;
+ }
+ 
+ body.modo-oscuro h1,
+ body.modo-oscuro h2,
+ body.modo-oscuro p {
+   color: #fff;
+ }
+ 
+ body.modo-oscuro img {
+   filter: brightness(150%);
+ }
+ 

@@ -7,41 +7,41 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Encriptador de texto</title>
-
   </head>
   <body>
     <header>
       <img class="logo" src="Imagenes/Logo (1).png" alt="Logo de la Página" />
     </header>
+    <div class="switch-container">
+      <input type="checkbox" id="modoOscuroSwitch">
+      <label for="modoOscuroSwitch" class="switch-label"></label>
+    </div>
+    <div class="switch-container">
+      <input type="checkbox" id="modoOscuroSwitch" />
+      <label for="modoOscuroSwitch" class="switch-label"></label>
+    </div>
+    <div class="botones">
+      <button class="btn_Encriptar">Encriptar</button>
+      <button class="btn_Desencriptar">Desencriptar</button>
+      <button class="btn_Limpiar">Limpiar</button>
+      <button class="btn_Copiar">Copiar</button>
+    </div>
+    <textarea id="texto" rows="10" cols="30"></textarea>
 
-    <form action="encriptador.php" method="post">
-      <form action="encriptador.php" method="post">
-         <textarea
-         name="texto"
-         id="texto"
-         cols="30"
-         rows="10"
-         oninput="handleInput(event)"
-         ></textarea>
-      <div class="botones">
-      <input type="submit" value="Encriptar" name="encriptar" />
-      <input type="submit" value="Desencriptar" name="desencriptar" />
-   </div>
-    </form>
 
     <div class="cuadro"></div>
 
     <img class="muneco" src="Imagenes/Muñeco.png" alt="Muneco" />
 
     <div class="cajatexto">
-      <h1 class="error">Ningún mensaje fue encontrado</h1>
-      <h2 class="peti">Ingresa el texto que deseas encriptar</h2>
+      <p class="error">Ningún mensaje fue encontrado</p>
+      <p class="peti">Ingresa el texto que deseas encriptar</p>
     </div>
 
     <div class="aclaraciones">
       <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
       <p>
-        Solo letras minúsculas y sin acentos
+        Solo letras minúsculas y sin acentos.
       </p>
     </div>
     <script src="script.js"></script>
